@@ -1,33 +1,27 @@
 $(document).ready(function(){
-
-	//$('.sketcher').append( $('<div></div>') );
-	startGrid(16);
+	startGrid(64);
+	$('.tile').hover(function(){
+        $(this).addClass('hover');
+    });
 });
 
 
-
-function startGrid(size){
-
-	for(var i = 0; i < size ; i++)
+function startGrid(tileSize){
+	var gridSize = 640;
+	var size = 640/tileSize;
+	for(var i = 0; i < tileSize; i+=1)
 	{
-		for(var j = 0; j < size ; j++)
+		for(var j = 0; j < tileSize; j++)
 		{
-			var $div = $('<div></div');
-			var width = 600/(size - 1);
-			var height = 600/(size - 1);
-
-			//$div.css("background-color","black");
-			$div.height(height);
-			$div.width(width);
-
-			$div.addClas('drawable');
-			$('.sketcher').append( $div );
+			var $div = $('<div></div>');
+			$div.addClass('tile');
+			$div.width(size);
+			$div.height(size);
+			$('.sketcher').append($div);
 		}
 	}
+	
+
 }
 
-/*$('div').hover(
-	function(){ $('div').css("background-color","black") },
-	function(){}
-)*/
 
