@@ -1,10 +1,13 @@
+input {
+	display: block;
+	margin: 10px auto;
+}
+
 .sketcher{
-	float: none;
 	background-color: #f0f0f0;
 	width: 640px;
 	height: 640px;
-	margin: 50px auto;
-	/*border-color: 2px solid red;*/
+	margin: 20px auto;
 
 
 }
@@ -17,7 +20,7 @@
 	padding:0;
     margin:0;
     float: left;
-	border-radius: 10%;
+	/*border-radius: 10%;*/
 
 }
 

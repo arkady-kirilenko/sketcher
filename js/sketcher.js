@@ -1,8 +1,6 @@
 $(document).ready(function(){
-	startGrid(64);
-	$('.tile').hover(function(){
-        $(this).addClass('hover');
-    });
+	startGrid(16);
+	
 });
 
 
@@ -21,6 +19,22 @@ function startGrid(tileSize){
 		}
 	}
 	
+	$('.tile').hover(function(){
+        $(this).addClass('hover');
+    });
+
+}
+
+
+function getInput(){
+	//$('.tile').removeClass('hover');
+	var input = prompt("If you want to clear the board, type the new size","64");
+
+	if(input)
+	{
+		$('.sketcher').empty();
+		startGrid(input);
+	}
 
 }
 
