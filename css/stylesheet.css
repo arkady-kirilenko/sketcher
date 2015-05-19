@@ -1,0 +1,21 @@
+.sketcher{
+	float: none;
+	background-color: #f0f0f0;
+	width: 640px;
+	height: 640px;
+	margin: 50px auto;
+	border-radius: 0%;
+}
+
+div{
+	position: relative;
+	float: left;
+	background-color: red;
+	border-radius: 10%;
+	width: 40px;
+	height: 40px;
+}
+
+.drawable{
+
+}
